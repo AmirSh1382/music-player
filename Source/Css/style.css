@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 80%);
+}
+
+.bgContainer {
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    transition: 0.5s;
+    filter: blur(5px);
+}
+
+.mainContainer {
+    box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 50%);
+    background-color:#cacaca;
+    border-radius: 15px;
+    margin: 150px auto;
+    max-width: 450px;
+    height: 565px;
+    transition: 0.3s;
+}
+
+.coverImg {
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    width: 350px;
+    height: 360px;
+    overflow: hidden;
+    border-radius: 15px;
+    transform: translate(-50%);
+    box-shadow: 0px 0px 40px 1px rgba(0, 0, 0, 60%);
+    transition: 0.3s;
+}
+
+.active {
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.audioInfo {
+    padding-top: 350px;
+    transition: 0.3s;
+}
+
+.audioName {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.audioArtist {
+    font-size: 23px;
+    color: rgba(0, 0, 0, 80%);
+}
+
+.timeBar {
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 3px;
+    margin-top: 30px;
+    font-size: 14px;
+    height: 20px;
+}
+
+.progressBar {
+    background-color: rgba(0, 0, 0, 10%);
+    border-radius: 10px;
+    cursor: pointer;
+    height: 5px;
+}
+
+.progress {
+    background-color: rgba(0, 0, 0, 70%);
+    border-radius: 50px;
+    height: 100%;
+    width: 0%;
+    transition: 0.3s;
+}
+
+.controls {
+    text-align: center;
+    height: 50px;
+    margin-top: 25px;
+    align-items: center;
+}
+
+.controls i {
+    color: rgba(0, 0, 0, 60%);
+    font-size: 32px;
+    cursor: pointer;
+    transition: all 0.3s, transform 0.1s;
+    width: 35px;
+}
+
+.controls i:active {
+    transform: scale(0.7);
+}
+
+.controls i:nth-child(2) {
+    font-size: 35px;
+    margin: 0px 25px;
+}
+
+.controls i:hover {
+    color: rgba(0, 0, 0, 80%);
+}
+
+@media only screen and (max-width:468px){
+    .mainContainer{
+        max-width: 90%;
+        height: 500px;
+    }
+    .audioInfo{
+        padding-top: 280px;
+    }
+    .coverImg{
+        max-width: 70%;
+        height: 300px;
+    }
+}

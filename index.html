@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Source/Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./Source/Css/style.css">
+    <script src="https://kit.fontawesome.com/24d29ab742.js" crossorigin="anonymous"></script>
+    <title>Music player Project</title>
+</head>
+<body>
+    <!-- the blured background -->
+    <div class="bgContainer"></div>
+
+    <!-- cover Img -->
+    <div class="coverImg"></div>
+
+    <!-- the main container -->
+    <div class="mainContainer">
+        <audio src="./Source/Media/Audios/Ho3ein - Kodex-1.mp3"></audio>
+        <div class="audioInfo">
+            <div class="audioName text-center">Audio Name</div>
+            <div class="audioArtist text-center">Artist</div>
+        </div>
+
+        <div class="timeBar mx-4">
+            <div class="currentTime">00:00</div>
+            <div class="duration">00:00</div>
+        </div>
+
+        <div class="progressBar mx-4">
+            <div class="progress"></div>
+        </div>
+
+        <div class="controls">
+            <i class="fa-solid fa-backward"></i>
+            <i class="fa-solid fa-play"></i>   <!--play Icon-->
+            <!-- <i class="fa-solid fa-pause"></i>  pause Icon -->
+            <i class="fa-solid fa-forward"></i>
+        </div>
+    </div>
+
+    <script src="./Source/Bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./Source/Js/script.js"></script>
+</body>
+</html>
